@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 全局样式 */
+  body {
+    font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* 头部区域 */
+  .hero {
+    background: linear-gradient(135deg, #0056b3, #00aced);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  /* 主体内容 */
+  main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* 视频区样式 */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video-item h3 {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #f7f7f7;
+    margin: 0;
+  }
+  
+  .video-item video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* 游戏合集样式 */
+  .games-section .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .game-list a {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .game-list a:hover {
+    background: #e6f7ff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 联系我们区域 */
+  .contact {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .contact li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* 页脚 */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #0056b3;
+    color: #fff;
+    margin-top: 40px;
+  }
